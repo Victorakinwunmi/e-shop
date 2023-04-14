@@ -1,7 +1,7 @@
 <template>
   <div class="fixed z-10">
     <div class="lg:block w-full bg-white shadow-xl lg:shadow-sm rounded-b-md py-5 z-10 fixed">
-      <div class="flex justify-between items-center max-w-8xl mx-auto px-4 md:px-6 lg:py-2 lg:px-2 xl:px-0">
+      <div class="flex justify-between items-center max-w-8xl mx-auto px-4 md:px-6 py-2 lg:px-2 xl:px-0">
         <ul class="items-center gap-10 hidden lg:flex">
           <li class="uppercase text-sm">how it works</li>
           <li class="uppercase text-sm">Faqs</li>

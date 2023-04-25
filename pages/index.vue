@@ -11,8 +11,8 @@
         <div class="hidden lg:block lg:w-3/6">
           <img :src="require('@/assets/images/cta2.png')" class="w-full h-full">
         </div>
-        <div class="block lg:hidden w-full">
-          <img :src="require('@/assets/images/cta3.png')" class="w-full">
+        <div class="block mt-10 md:mt-16 lg:hidden w-full">
+          <img :src="require('@/assets/images/ctasmall.png')" class="w-full">
         </div>
       </div>
     </div>

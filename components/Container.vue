@@ -37,7 +37,7 @@
       <div :class="is_revealed ? 'block h-screen' : 'hidden lg:block' " class="w-full mt-28 lg:mt-24 shadow-md border border-gray-200 bg-gray-50 py-6 z-10 fixed">
         <div class=" grid grid-cols-1 lg:grid-cols-8 gap-4 max-w-2xl mx-auto">
           <div class=" cursor-pointer" @mouseover="drop_down1 = true" @mouseleave="drop_down1 = false">
-            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent border-b-2 py-4 duration-500 w-full text-center lg:w-20 ease-in-out hover:border-gray-400">what's new</div>
+            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full text-center lg:w-20 ease-in-out hover:border-gray-400">what's new</div>
             <div v-show="drop_down1" class="block lg:absolute items-center gap-10 lg:flex shadow-md lg:px-20 py-1 lg:py-20 bg-gray-50 left-0 max-w-full">
               <ul v-show="drop_down1" class="w-full lg:w-1/3 block lg:mt-5 bg-white py-5">
                 <a href="/" class="w-full border-transparent block py-2 lg:py-4 border px-2 lg:px-10 hover:border-gray-500 lg:border-0 hover:text-red-500 cursor-pointer">Item 1</a>
@@ -79,7 +79,7 @@
             </div>
           </div>
           <div class="  cursor-pointer" @mouseover="drop_down2 = true" @mouseleave="drop_down2 = false">
-            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent border-b-2 py-4 duration-500 w-full text-center ease-in-out hover:border-gray-400">designers</div>
+            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full text-center ease-in-out hover:border-gray-400">designers</div>
             <div v-show="drop_down2" class="block lg:absolute items-center gap-10 lg:flex lg:px-20 shadow-md py-1 lg:py-20 bg-gray-50 left-0 max-w-full">
               <ul v-show="drop_down2" class="w-full lg:w-1/3 block lg:mt-5 bg-white py-5">
                 <a href="/" class="w-full border-transparent block py-2 lg:py-4 border px-2 lg:px-10 hover:border-gray-500 lg:border-0 hover:text-red-500 cursor-pointer">Item 1</a>
@@ -121,7 +121,7 @@
             </div>
           </div>
           <div class="cursor-pointer" @mouseover="drop_down3 = true" @mouseleave="drop_down3 = false">
-            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent border-b-2 py-4 duration-500 w-full text-center lg:w-20 ease-in-out hover:border-gray-400">collections</div>
+            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full text-center lg:w-20 ease-in-out hover:border-gray-400">collections</div>
             <div v-show="drop_down3" class="block lg:absolute items-center gap-10 lg:flex lg:px-20 shadow-md bg-gray-50 py-1 lg:py-20 left-0 max-w-full">
               <ul v-show="drop_down3" class="w-full lg:w-1/3 block lg:mt-5 bg-white py-5">
                 <a href="/" class="w-full border-transparent block py-2 lg:py-4 border px-2 lg:px-10 hover:border-gray-500 lg:border-0 hover:text-red-500 cursor-pointer">Item 1</a>
@@ -163,7 +163,7 @@
             </div>
           </div>
           <div class=" cursor-pointer" @mouseover="drop_down4 = true" @mouseleave="drop_down4 = false">
-            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent border-b-2 py-4 duration-500 w-full text-center lg:text-left lg:text-center w-20 ease-in-out hover:border-gray-400">shoes</div>
+            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full text-center lg:text-left lg:text-center w-20 ease-in-out hover:border-gray-400">shoes</div>
             <div v-show="drop_down4" class="block lg:absolute items-center gap-10 lg:flex lg:px-20 shadow-md bg-gray-50 py-1 lg:py-20 left-0 max-w-full">
               <ul v-show="drop_down4" class="w-full lg:w-1/3 block lg:mt-5 bg-white py-5">
                 <a href="/" class="w-full border-transparent block py-2 lg:py-4 border px-2 lg:px-10 hover:border-gray-500 lg:border-0 hover:text-red-500 cursor-pointer">Item 1</a>
@@ -205,7 +205,7 @@
             </div>
           </div>
           <div class="  cursor-pointer" @mouseover="drop_down5 = true" @mouseleave="drop_down5 = false">
-            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent border-b-2 py-4 duration-500 w-full text-center lg:w-20 lg:text-center ease-in-out hover:border-gray-400">electronics</div>
+            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full text-center lg:w-20 lg:text-center ease-in-out hover:border-gray-400">electronics</div>
             <div v-show="drop_down5" class="block lg:absolute items-center gap-10 lg:flex lg:px-20 shadow-md bg-gray-50 py-1 lg:py-20 left-0 max-w-full">
               <ul v-show="drop_down5" class="w-full lg:w-1/3 block lg:mt-5 bg-white py-5">
                 <a href="/" class="w-full border-transparent block py-2 lg:py-4 border px-2 lg:px-10 hover:border-gray-500 lg:border-0 hover:text-red-500 cursor-pointer">Item 1</a>
@@ -225,7 +225,7 @@
             </div>
           </div>
           <div class="  cursor-pointer" @mouseover="drop_down6 = true" @mouseleave="drop_down6= false">
-            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent border-b-2 py-4 duration-500 w-full text-center lg:w-20 ease-in-out hover:border-gray-400">bags</div>
+            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full text-center lg:w-20 ease-in-out hover:border-gray-400">bags</div>
             <div v-show="drop_down6" class="block lg:absolute items-center gap-10 lg:flex lg:px-20 shadow-md bg-gray-50 py-1 lg:py-20 left-0 max-w-full">
               <ul v-show="drop_down6" class="w-full lg:w-1/3 block lg:mt-5 bg-white py-5">
                 <a href="/" class="w-full border-transparent block py-2 lg:py-4 border px-2 lg:px-10 hover:border-gray-500 lg:border-0 hover:text-red-500 cursor-pointer">Item 1</a>
@@ -245,7 +245,7 @@
             </div>
           </div>
           <div class="  cursor-pointer" @mouseover="drop_down7 = true" @mouseleave="drop_down7 = false">
-            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent border-b-2 py-4 duration-500 w-full  lg:w-20 text-center ease-in-out hover:border-gray-400">accessories</div>
+            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full  lg:w-20 text-center ease-in-out hover:border-gray-400">accessories</div>
             <div v-show="drop_down7" class="block lg:absolute items-center gap-10 lg:flex lg:px-20 shadow-md bg-gray-50 left-0 py-1 lg:py-20 max-w-full">
               <ul v-show="drop_down7" class="w-full lg:w-1/3 block lg:mt-5 bg-white py-5">
                 <a href="/" class="w-full border-transparent block py-2 lg:py-4 border px-2 lg:px-10 hover:border-gray-500 lg:border-0 hover:text-red-500 cursor-pointer">Item 1</a>
@@ -297,7 +297,7 @@
             </div>
           </div>
           <div class="cursor-pointer" @mouseover="drop_down8 = true" @mouseleave="drop_down8 = false">
-            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent border-b-2 py-4 duration-500 w-full text-center lg:w-24 ease-in-out hover:border-gray-400">instruments</div>
+            <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full text-center lg:w-24 ease-in-out hover:border-gray-400">instruments</div>
             <div v-show="drop_down8" class="block lg:absolute items-center gap-10 lg:flex lg:px-20 shadow-md bg-gray-50 py-1 lg:py-20 left-0 max-w-full">
               <ul v-show="drop_down8" class="w-full lg:w-1/3 block lg:mt-5 bg-white py-5">
                 <a href="/" class="w-full border-transparent block py-2 lg:py-4 border px-2 lg:px-10 hover:border-gray-500 lg:border-0 hover:text-red-500 cursor-pointer">Item 1</a>

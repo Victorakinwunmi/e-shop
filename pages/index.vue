@@ -16,12 +16,138 @@
         </div>
       </div>
     </div>
+    <div class="py-16 lg:py-28 max-w-8xl mx-auto px-2 lg:px-8 xl:px-0">
+       <h1 class="uppercase text-center mb-5 text-2xl">just landed</h1>
+       <div class="flex mb-5 items-center justify-between">
+         <img :src="require('@/assets/icons/leftchev.png')" class="w-10 cursor-pointer" @click="showPrev">
+         <img :src="require('@/assets/icons/rightchev.png')" class="w-10 cursor-pointer" @click="showNext">
+       </div>
+      <VueSlickCarousel v-bind="settings" ref="carousel" >
+          <div>
+              <div class="bg-no-repeat bg-cover mx-2 bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/images/cta.png')+ ')' } ">
+                <div class="bg-black h-96 justify-end flex bg-opacity-10 flex-col">
+                  <div class="bg-black bg-opacity-50 py-4 px-6">
+                     <h1 class="text-white font-bold text-xl">lorem ipsum</h1>
+                     <h1  class="text-white mt-2">2000</h1>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div>
+              <div class="bg-no-repeat bg-cover mx-2 bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/images/cta3.png')+ ')' } ">
+                <div class="bg-black h-96 flex-col justify-end flex bg-opacity-10">
+                  <div class="bg-black bg-opacity-50 py-4 px-6">
+                    <h1 class="text-white font-bold text-xl">lorem ipsum</h1>
+                     <h1  class="text-white mt-2">2000</h1>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div>
+              <div class="bg-no-repeat bg-cover mx-2 bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/images/cta.png')+ ')' } ">
+                <div class="bg-black h-96 flex-col justify-end flex bg-opacity-10">
+                  <div class="bg-black bg-opacity-50 py-4 px-6">
+                    <h1 class="text-white font-bold text-xl">lorem ipsum</h1>
+                     <h1  class="text-white mt-2">2000</h1>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div>
+              <div class="bg-no-repeat bg-cover mx-2 bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/images/cta2.png')+ ')' } ">
+                <div class="bg-black h-96 flex-col justify-end flex bg-opacity-10">
+                  <div class="bg-black bg-opacity-50 py-4 px-6">
+                     <h1 class="text-white font-bold text-xl">lorem ipsum</h1>
+                     <h1  class="text-white mt-2">2000</h1>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div>
+              <div class="bg-no-repeat bg-cover mx-2 bg-top" :style="{ backgroundRepeat: 'no-repeat' + ';', backgroundImage: 'url(' +require('@/assets/images/cta3.png')+ ')' } ">
+                <div class="bg-black h-96 flex-col justify-end flex bg-opacity-10">
+                  <div class="bg-black bg-opacity-50 py-4 px-6">
+                     <h1 class="text-white font-bold text-xl">lorem ipsum</h1>
+                     <h1  class="text-white mt-2">2000</h1>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </VueSlickCarousel>
+    </div>
   </div>
 </template>
 
 <script>
-export default {
+import VueSlickCarousel from 'vue-slick-carousel'
+import 'vue-slick-carousel/dist/vue-slick-carousel.css'
 
+export default {
+  name: 'MyComponent',
+  components: { VueSlickCarousel },
+  data(){
+    return{
+      settings:{
+       "centerMode": true,
+       "centerPadding": "200px",
+       "focusOnSelect": true,
+       "infinite": true,
+       "slidesToShow": 3,
+       "speed": 500,
+       "arrows":false,
+       "responsive": [
+        {
+          "breakpoint": 1024,
+          "settings": {
+          "centerMode": true,
+          "centerPadding": "70px",
+          "focusOnSelect": true,
+          "infinite": true,
+          "slidesToShow": 2,
+          "speed": 500,
+          "arrows":false,
+            
+          }
+        },
+        {
+          "breakpoint": 600,
+          "settings": {
+          "centerMode": true,
+          "centerPadding": "20px",
+          "focusOnSelect": true,
+          "infinite": true,
+          "slidesToShow": 2,
+          "speed": 500,
+          "arrows":false,
+            
+          }
+        },
+        {
+          "breakpoint": 478,
+          "settings": {
+          "centerMode": true,
+          "centerPadding": "20px",
+          "focusOnSelect": true,
+          "infinite": true,
+          "slidesToShow": 1,
+          "speed": 500,
+          "arrows":false,
+            
+          }
+        },
+       ]
+      }
+      
+    };
+  },
+  methods: {
+      showPrev() {
+        this.$refs.carousel.prev()
+      },
+      showNext() {
+        this.$refs.carousel.next()
+      },
+  }
 }
 </script>
 

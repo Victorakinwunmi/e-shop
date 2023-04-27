@@ -34,8 +34,8 @@
         </div>
       </div>
     </div>
-      <div :class="is_revealed ? 'block h-screen' : 'hidden lg:block' " class="w-full mt-28 lg:mt-24 shadow-md border border-gray-200 bg-gray-50 py-6 z-10 fixed">
-        <div class=" grid grid-cols-1 lg:grid-cols-8 gap-4 max-w-2xl mx-auto">
+      <div :class="is_revealed ? 'block h-screen' : 'hidden lg:block' " class="w-full mt-24 lg:mt-24 shadow-md border border-gray-200 bg-gray-50 py-2 z-10 fixed">
+        <div class=" grid grid-cols-1 lg:grid-cols-8 gap-4 max-w-2xl mt-4 lg:mt-0 mx-auto">
           <div class=" cursor-pointer" @mouseover="drop_down1 = true" @mouseleave="drop_down1 = false">
             <div class="uppercase text-sm lg:text-xs hover:text-gray-400 cursor-pointer border-transparent lg:border-b-2 py-4 duration-500 w-full text-center lg:w-20 ease-in-out hover:border-gray-400">what's new</div>
             <div v-show="drop_down1" class="block lg:absolute items-center gap-10 lg:flex shadow-md lg:px-20 py-1 lg:py-20 bg-gray-50 left-0 max-w-full">

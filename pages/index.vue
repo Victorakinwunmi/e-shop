@@ -75,6 +75,17 @@
           </div>
       </VueSlickCarousel>
     </div>
+    <div class="py-8 px-2 lg:px-6 xl:px-0 lg:py-4 mb-8 lg:mb-16 max-w-8xl mx-auto">
+      <h1 class="uppercase mb-8 text-2xl text-center">why us</h1>
+      <div class=" grid grid-cols-1 lg:grid-cols-3 gap-4 mx-auto">
+         <ItemsCard v-for="item in services" :key="item.id" 
+            :icon="item.icon"
+            :title="item.title"
+            :desc="item.desc"
+          />
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -136,7 +147,33 @@ export default {
           }
         },
        ]
-      }
+      },
+      services:[
+        {
+          id:1,
+          icon:require('@/assets/icons/icon1.png'),
+          title:'Lorem',
+          desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit voluptatem vitae deleniti. Soluta esse,
+                earum nobis perferendis ipsum placeat dolorem repellendus iusto
+                suscipit mollitia dicta odio totam in. Illo.`
+        },
+        {
+          id:2,
+          icon:require('@/assets/icons/icon2.png'),
+          title:'ipsum',
+          desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit voluptatem vitae deleniti. Soluta esse,
+              earum nobis perferendis ipsum placeat dolorem repellendus iusto
+              suscipit mollitia dicta odio totam in. Illo.`
+        },
+        {
+          id:3,
+          icon:require('@/assets/icons/icon3.png'),
+          title:'remip',
+          desc:`Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit voluptatem vitae deleniti. Soluta esse,
+                earum nobis perferendis ipsum placeat dolorem repellendus iusto
+                suscipit mollitia dicta odio totam in. Illo.`
+        },
+      ]
       
     };
   },

@@ -90,7 +90,7 @@
       <div class="w-full lg:w-6/12 bg-gray-50">
         <img :src="require('@/assets/images/cta3.png')" class="mx-auto">
       </div>
-      <div class="w-full lg:w-6/12 bg-gray-200 mt-4 lg:mt-0 py-5 px-8 lg:py-16 lg:px-10">
+      <div class="w-full lg:w-6/12 bg-gray-100 mt-4 lg:mt-0 py-5 px-8 lg:py-16 lg:px-10">
         <h1 class="uppercase text-2xl font-semibold">laptop collection!</h1>
         <p class="mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
         <div class="flex items-center gap-2 mt-4 lg:mt-10">
